@@ -16,7 +16,7 @@ app.get("/roll-dice", (req, res) => {
 
     for (let i = 0; i<5; i++) {
         let roll = rollDie()
-        dice.push("You rollded " + roll)
+        dice.push("Dice " +i+ " rolled: " + roll)
     }
 
     res.json({dice})
